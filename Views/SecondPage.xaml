@@ -3,10 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ExpWithElementsOfMAUI.Views.SecondPage"
              Title="SecondPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <StackLayout>
+        <BoxView Color="Red" HeightRequest="100" WidthRequest="200" HorizontalOptions="Start"/>
+        <BoxView BackgroundColor="AliceBlue"  HeightRequest="100" WidthRequest="200" HorizontalOptions="End" />
+
+    </StackLayout>
 </ContentPage>
