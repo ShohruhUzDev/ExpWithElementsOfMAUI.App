@@ -6,48 +6,43 @@
    
         <ScrollView x:Name="scroll">
             <StackLayout>
-                
-        <Label Text="Bu label"
+            <Frame CornerRadius="16" BackgroundColor="AliceBlue" BorderColor="Red" HasShadow="True"  Margin="15">
+              <Label Text="Bu label"
                HorizontalOptions="Center"
                FontAttributes="Bold"
                Margin="15"
                MaxLines="3"
                FontSize="20"
                VerticalTextAlignment="End" LineBreakMode="NoWrap" CharacterSpacing="3"/>
-                
+            </Frame>
+            <Frame x:Name="frame" CornerRadius="15" BackgroundColor="AliceBlue" BorderColor="Red" HasShadow="True"  Margin="15">
                 <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
-                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
-                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
-                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
-                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
-                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
-                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
-                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
-                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
-                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
-                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
-                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
-                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
-                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
-                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
-                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
-                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
-                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
-                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
-                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
-                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
-                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
-                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
-                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
-                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
-                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
-                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
-                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
-                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
-                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
-                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
-                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
-                <Button CornerRadius="15" Margin="10"  HeightRequest="50" WidthRequest="200" Text="Click me" x:Name="Hello" Pressed="Hello_Pressed" />
+
+            </Frame>
+            <Stepper x:Name="stepper"  Maximum="10000" Increment="5" ValueChanged="stepper_ValueChanged"/>
+            <Label x:Name="stevalue_txt" FontSize="18"/>
+            <Switch x:Name="swithcer" IsToggled="True" Toggled="swithcer_Toggled" WidthRequest="100" HeightRequest="50"  HorizontalOptions="Center"/>
+            <Label x:Name="value_txt" FontSize="20" HorizontalTextAlignment="Center"/>
+
+            <Frame Margin="15" BackgroundColor="AliceBlue" CornerRadius="15">
+                <StackLayout>
+            <RadioButton Content="Morning" Value="1" CheckedChanged="RadioButton_CheckedChanged" GroupName="salom"/>
+            <RadioButton Content="Afternoun" Value="2" CheckedChanged="RadioButton_CheckedChanged" GroupName="salom"/>
+            <RadioButton Content="qayerga" Value="3" CheckedChanged="RadioButton_CheckedChanged" GroupName="salom"/>
+            <RadioButton Content="mayi" Value="4" CheckedChanged="RadioButton_CheckedChanged" GroupName="salom"/>
+                    <Label x:Name="radio_label" FontSize="17"/>
+                </StackLayout>
+            </Frame>
+
+
+            <Button 
+                CornerRadius="15"
+                Margin="10"
+                HeightRequest="50"
+                WidthRequest="200"
+                Text="Click me"
+                    x:Name="Hello"
+                    Pressed="Hello_Pressed" />
         
             </StackLayout>
 
