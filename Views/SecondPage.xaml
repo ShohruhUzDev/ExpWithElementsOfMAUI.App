@@ -3,9 +3,55 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ExpWithElementsOfMAUI.Views.SecondPage"
              Title="SecondPage">
-    <StackLayout>
-        <BoxView Color="Red" HeightRequest="100" WidthRequest="200" HorizontalOptions="Start"/>
-        <BoxView BackgroundColor="AliceBlue"  HeightRequest="100" WidthRequest="200" HorizontalOptions="End" />
+   
+        <ScrollView x:Name="scroll">
+            <StackLayout>
+                
+        <Label Text="Bu label"
+               HorizontalOptions="Center"
+               FontAttributes="Bold"
+               Margin="15"
+               MaxLines="3"
+               FontSize="20"
+               VerticalTextAlignment="End" LineBreakMode="NoWrap" CharacterSpacing="3"/>
+                
+                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
+                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
+                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
+                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
+                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
+                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
+                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
+                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
+                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
+                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
+                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
+                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
+                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
+                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
+                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
+                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
+                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
+                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
+                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
+                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
+                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
+                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
+                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
+                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
+                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
+                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
+                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
+                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
+                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
+                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
+                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
+                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
+                <Button CornerRadius="15" Margin="10"  HeightRequest="50" WidthRequest="200" Text="Click me" x:Name="Hello" Pressed="Hello_Pressed" />
+        
+            </StackLayout>
 
-    </StackLayout>
+
+        </ScrollView>
+
 </ContentPage>
