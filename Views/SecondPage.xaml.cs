@@ -2,6 +2,7 @@ namespace ExpWithElementsOfMAUI.Views;
 
 public partial class SecondPage : ContentPage
 {
+    public int value = 10;
 	public SecondPage()
 	{
 		InitializeComponent();
@@ -15,8 +16,22 @@ public partial class SecondPage : ContentPage
     
 
 
-    private void salom_Completed_1(object sender, EventArgs e)
+    
+
+    private void swithcer_Toggled(object sender, ToggledEventArgs e)
     {
-        DisplayAlert("hello", "Tugatilganda", "ok");
+        value_txt.Text=$"{e.Value}";
+    }
+
+    private void stepper_ValueChanged(object sender, ValueChangedEventArgs e)
+    {
+        stevalue_txt.Text =$"{e.NewValue}";
+    }
+
+    private void RadioButton_CheckedChanged(object sender, CheckedChangedEventArgs e)
+    {
+        RadioButton radioButton=(RadioButton)sender;    
+        radio_label.Text=radioButton.Content.ToString();
+
     }
 }
