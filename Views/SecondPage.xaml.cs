@@ -34,4 +34,20 @@ public partial class SecondPage : ContentPage
         radio_label.Text=radioButton.Content.ToString();
 
     }
+    protected override async void OnAppearing()
+    {
+        while(progress.Progress<0.9)
+        {
+            
+
+                progress.Progress += 0.1;
+                proglabel.Text = $"Holat:{Math.Round(progress.Progress, 1) * 100}%";
+                await Task.Delay(1000);
+
+            if (progress.Progress >0.9)
+                progress.Progress = 0;
+        }
+        proglabel.Text = "Finished";
+        base.OnAppearing();
+    }
 }

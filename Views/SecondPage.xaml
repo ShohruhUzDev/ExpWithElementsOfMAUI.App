@@ -19,6 +19,27 @@
                 <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
 
             </Frame>
+            <Label x:Name="proglabel" FontSize="17" FontAttributes="Bold" HorizontalOptions="Center"/>
+            <ProgressBar x:Name="progress"  ProgressColor="Black"  WidthRequest="260"/>
+            <TableView Intent="Settings">
+                <TableView.Root >
+                    <TableRoot Title="Ingliz tili">
+                        <TableSection Title="eng-uz">
+                            <TextCell Text="Hello" Detail="Bu salom degani"/>
+                            <TextCell Text="apple" Detail="Bu olma degani"/>
+                            <TextCell Text="phone" Detail="Bu telefon degani"/>
+                        </TableSection>
+
+                        <TableSection Title="uz-eng">
+                            <TextCell Text="salom" Detail="Bu hello degani"/>
+                            <TextCell Text="olma" Detail="Bu apple degani"/>
+                            <TextCell Text="telefon" Detail="Bu phone degani"/>
+                        </TableSection>
+                    </TableRoot>
+                </TableView.Root>
+            </TableView>
+               
+                
             <Stepper x:Name="stepper"  Maximum="10000" Increment="5" ValueChanged="stepper_ValueChanged"/>
             <Label x:Name="stevalue_txt" FontSize="18"/>
             <Switch x:Name="swithcer" IsToggled="True" Toggled="swithcer_Toggled" WidthRequest="100" HeightRequest="50"  HorizontalOptions="Center"/>
