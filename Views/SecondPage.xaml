@@ -21,7 +21,11 @@
             </Frame>
             <Label x:Name="proglabel" FontSize="17" FontAttributes="Bold" HorizontalOptions="Center"/>
             <ProgressBar x:Name="progress"  ProgressColor="Black"  WidthRequest="260"/>
-            <TableView Intent="Settings">
+
+
+            <ActivityIndicator IsRunning="True" Color="Black"/>
+
+            <!--<TableView Intent="Settings">
                 <TableView.Root >
                     <TableRoot Title="Ingliz tili">
                         <TableSection Title="eng-uz">
@@ -37,7 +41,7 @@
                         </TableSection>
                     </TableRoot>
                 </TableView.Root>
-            </TableView>
+            </TableView>-->
                
                 
             <Stepper x:Name="stepper"  Maximum="10000" Increment="5" ValueChanged="stepper_ValueChanged"/>
