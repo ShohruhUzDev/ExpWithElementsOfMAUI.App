@@ -1,77 +1,133 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ExpWithElementsOfMAUI.Views.SecondPage"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 x:Class="ExpWithElementsOfMAUI.Views.SecondPage"
+             xmlns:vm="clr-namespace:ExpWithElementsOfMAUI.Views"
+             x:DataType="vm:SecondPageViewModel"
              Title="SecondPage">
-   
-        <ScrollView x:Name="scroll">
-            <StackLayout>
-            <Frame CornerRadius="16" BackgroundColor="AliceBlue" BorderColor="Red" HasShadow="True"  Margin="15">
-              <Label Text="Bu label"
-               HorizontalOptions="Center"
-               FontAttributes="Bold"
-               Margin="15"
-               MaxLines="3"
-               FontSize="20"
-               VerticalTextAlignment="End" LineBreakMode="NoWrap" CharacterSpacing="3"/>
-            </Frame>
-            <Frame x:Name="frame" CornerRadius="15" BackgroundColor="AliceBlue" BorderColor="Red" HasShadow="True"  Margin="15">
-                <Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
+	<!--<ContentPage.Resources>
+		<ResourceDictionary>
+			<Style  TargetType="Button">
+				<Setter Property="TextColor" Value="#004D40"/>
+				<Setter Property="BackgroundColor" Value="#80CBC4"/>
+				<Setter Property="Margin" Value="10"/>
+				<Setter Property="CornerRadius" Value="15"/>
 
-            </Frame>
-            <Label x:Name="proglabel" FontSize="17" FontAttributes="Bold" HorizontalOptions="Center"/>
-            <ProgressBar x:Name="progress"  ProgressColor="Black"  WidthRequest="260"/>
+			</Style>
+		</ResourceDictionary>
+	</ContentPage.Resources>-->
+	<!--<ContentPage.Resources>
+		<ResourceDictionary>
+			<x:Array x:Key="users" Type="{x:Type x:String}">
+				<x:String>Tom</x:String>
+				<x:String>Bob</x:String>
+				<x:String>Sam</x:String>
+				<x:String>Alice</x:String>
+			</x:Array>
+		</ResourceDictionary>
+	</ContentPage.Resources>-->
+
+	<ScrollView x:Name="scroll">
+			<StackLayout>
+			<!--<Frame CornerRadius="16" BackgroundColor="AliceBlue" BorderColor="Red" HasShadow="True"  Margin="15">
+			  <Label Text="Bu label"
+			   HorizontalOptions="Center"
+			   FontAttributes="Bold"
+			   Margin="15"
+			   MaxLines="3"
+			   FontSize="20"
+			   VerticalTextAlignment="End" LineBreakMode="NoWrap" CharacterSpacing="3"/>
+			</Frame>-->
+			<!--<Frame x:Name="frame" CornerRadius="15" BackgroundColor="AliceBlue" BorderColor="Red" HasShadow="True"  Margin="15">
+				<Entry HeightRequest="40" WidthRequest="300" Placeholder="Menga yozgin"  CharacterSpacing="4" ClearButtonVisibility="WhileEditing" />
+
+			</Frame>-->
+			<!--<Label x:Name="proglabel" FontSize="17" FontAttributes="Bold" HorizontalOptions="Center"/>-->
+			<!--<ProgressBar x:Name="progress"  ProgressColor="Black"  WidthRequest="260"/>
 
 
-            <ActivityIndicator IsRunning="True" Color="Black"/>
+			<ActivityIndicator IsRunning="True" Color="Black"/>-->
 
-            <!--<TableView Intent="Settings">
-                <TableView.Root >
-                    <TableRoot Title="Ingliz tili">
-                        <TableSection Title="eng-uz">
-                            <TextCell Text="Hello" Detail="Bu salom degani"/>
-                            <TextCell Text="apple" Detail="Bu olma degani"/>
-                            <TextCell Text="phone" Detail="Bu telefon degani"/>
-                        </TableSection>
+			<!--<TableView Intent="Settings">
+				<TableView.Root >
+					<TableRoot Title="Ingliz tili">
+						<TableSection Title="eng-uz">
+							<TextCell Text="Hello" Detail="Bu salom degani"/>
+							<TextCell Text="apple" Detail="Bu olma degani"/>
+							<TextCell Text="phone" Detail="Bu telefon degani"/>
+						</TableSection>
 
-                        <TableSection Title="uz-eng">
-                            <TextCell Text="salom" Detail="Bu hello degani"/>
-                            <TextCell Text="olma" Detail="Bu apple degani"/>
-                            <TextCell Text="telefon" Detail="Bu phone degani"/>
-                        </TableSection>
-                    </TableRoot>
-                </TableView.Root>
-            </TableView>-->
-               
+						<TableSection Title="uz-eng">
+							<TextCell Text="salom" Detail="Bu hello degani"/>
+							<TextCell Text="olma" Detail="Bu apple degani"/>
+							<TextCell Text="telefon" Detail="Bu phone degani"/>
+						</TableSection>
+					</TableRoot>
+				</TableView.Root>
+			</TableView>-->
+			   
+				
+			<!--<Stepper x:Name="stepper"  Maximum="10000" Increment="5" ValueChanged="stepper_ValueChanged"/>
+			<Label x:Name="stevalue_txt" FontSize="18"/>
+			<Switch x:Name="swithcer" IsToggled="True" Toggled="swithcer_Toggled" WidthRequest="100" HeightRequest="50"  HorizontalOptions="Center"/>
+			<Label x:Name="value_txt" FontSize="20" HorizontalTextAlignment="Center"/>-->
+
+			<!--<Frame Margin="15" BackgroundColor="AliceBlue" CornerRadius="15">
+				<StackLayout>
+			<RadioButton Content="Morning" Value="1" CheckedChanged="RadioButton_CheckedChanged" GroupName="salom"/>
+			<RadioButton Content="Afternoun" Value="2" CheckedChanged="RadioButton_CheckedChanged" GroupName="salom"/>
+			<RadioButton Content="qayerga" Value="3" CheckedChanged="RadioButton_CheckedChanged" GroupName="salom"/>
+			<RadioButton Content="mayi" Value="4" CheckedChanged="RadioButton_CheckedChanged" GroupName="salom"/>
+					<Label x:Name="radio_label" FontSize="17"/>
+				</StackLayout>
+			</Frame>-->
+
+			<!--<Label  Text="{Binding Source={x:Reference Entry_txt}, Path=Text}"/>
+			<Entry x:Name="Entry_txt"/>
+			<Button 
+				HeightRequest="{Binding Source={Reference stepper}, Path=Value }"
+				WidthRequest="200"
+				Text="{Binding Source={Reference usersList}, Path=SelectedItem}"
+			   
+				x:Name="Hello"
+				Pressed="Hello_Pressed" />-->
+
+			<!--<Entry x:Name="entry1" Margin="10"/>
+			<Entry x:Name="entry2" Margin="10"
+		   BindingContext="{x:Reference entry1}"
+		   Text="{Binding Path=Text, Mode=TwoWay}"/>-->
+
+            <VerticalStackLayout Padding="5">
+                <VerticalStackLayout>
+                    <Entry Placeholder="Enter Name" Text="{Binding Name}"/>
+                    <Entry Placeholder="Enter Age" Text="{Binding Age}"/>
+
+                    <StackLayout Orientation="Horizontal">
+                        <Button Text="Save" WidthRequest="100" HorizontalOptions="Start" Command="{Binding AddCommand}" />
+                        <Button Text="Delete" Command="{Binding DeleteCommand}" CommandParameter="{Binding Source={Reference Name= usersList } , Path=SelectedItem}" WidthRequest="100" HorizontalOptions="Start" />
+                    </StackLayout>
+                 
+                </VerticalStackLayout>
+                <ListView x:Name="usersList" ItemsSource="{Binding People}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <VerticalStackLayout>
+                                    <Label Text="{Binding Name}"/>
+                                    <Label Text="{Binding Age}"/>
+                                </VerticalStackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+             
+            </VerticalStackLayout>
                 
-            <Stepper x:Name="stepper"  Maximum="10000" Increment="5" ValueChanged="stepper_ValueChanged"/>
-            <Label x:Name="stevalue_txt" FontSize="18"/>
-            <Switch x:Name="swithcer" IsToggled="True" Toggled="swithcer_Toggled" WidthRequest="100" HeightRequest="50"  HorizontalOptions="Center"/>
-            <Label x:Name="value_txt" FontSize="20" HorizontalTextAlignment="Center"/>
+           
 
-            <Frame Margin="15" BackgroundColor="AliceBlue" CornerRadius="15">
-                <StackLayout>
-            <RadioButton Content="Morning" Value="1" CheckedChanged="RadioButton_CheckedChanged" GroupName="salom"/>
-            <RadioButton Content="Afternoun" Value="2" CheckedChanged="RadioButton_CheckedChanged" GroupName="salom"/>
-            <RadioButton Content="qayerga" Value="3" CheckedChanged="RadioButton_CheckedChanged" GroupName="salom"/>
-            <RadioButton Content="mayi" Value="4" CheckedChanged="RadioButton_CheckedChanged" GroupName="salom"/>
-                    <Label x:Name="radio_label" FontSize="17"/>
-                </StackLayout>
-            </Frame>
+		</StackLayout>
 
 
-            <Button 
-                CornerRadius="15"
-                Margin="10"
-                HeightRequest="50"
-                WidthRequest="200"
-                Text="Click me"
-                    x:Name="Hello"
-                    Pressed="Hello_Pressed" />
-        
-            </StackLayout>
-
-
-        </ScrollView>
+		</ScrollView>
 
 </ContentPage>
