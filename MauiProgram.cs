@@ -1,6 +1,4 @@
-﻿using ExpWithElementsOfMAUI.ViewModels;
-using ExpWithElementsOfMAUI.Views;
-using Microsoft.Extensions.Logging;
+﻿using Microsoft.Extensions.Logging;
 
 namespace ExpWithElementsOfMAUI;
 
@@ -20,16 +18,7 @@ public static class MauiProgram
 #if DEBUG
 		builder.Logging.AddDebug();
 #endif
-		builder.Services.AddTransient<SecondPage>();
-		builder .Services.AddTransient<SecondPageViewModel>();
-        builder.Services.AddTransient<CommonPage>();
-        builder.Services.AddTransient<CommonPageViewModel>();
-        builder.Services.AddTransient<BoshPage>();
-		builder.Services.AddTransient<BoshPageViewModel>();
-		builder.Services.AddTransient<ModalPage>();
-        builder.Services.AddTransient<ModalPageViewModel>();
 
-
-        return builder.Build();
+		return builder.Build();
 	}
 }
