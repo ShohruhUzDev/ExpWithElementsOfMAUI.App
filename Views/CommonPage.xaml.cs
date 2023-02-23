@@ -8,5 +8,6 @@ public partial class CommonPage : ContentPage
 	{
 		InitializeComponent();
 		BindingContext = viewModel;
+		string g = "";
 	}
 }
