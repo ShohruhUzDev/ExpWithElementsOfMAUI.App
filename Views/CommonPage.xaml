@@ -6,6 +6,6 @@
              x:DataType="vm:CommonPageViewModel"
              Title="Common">
     <StackLayout>
-        <Button Text="Back" Command="{Binding BackCommand}"/>
+       
     </StackLayout>
 </ContentPage>
